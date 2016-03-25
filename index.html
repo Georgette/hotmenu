@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>hotmenu</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="A responsive, user-friendly jQuery mobile menu.">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="hotmenu.jquery.js"></script>
+    <link rel="stylesheet" href="hotmenu.css">
+    <link rel="stylesheet" href="sample.css">
+    <script>
+      $(function() {
+        $('nav').hotMenu({
+          toggleSelector: '.toggle'
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="links">
+      <a href='#'>Download</a>
+      <a href='#'>Contact</a>
+      <a href='http://ctruelson.github.io/hotmenu'>Github</a>
+    </nav>
+    <div class="toggle"></div>
+    <div class="container">
+      <header>
+        <span>...that is a</span>
+        <h1 class="logo"><span class="logo-large">hot</span>menu</h1>
+        <p>A responsive, full-screen jQuery menu.</p>
+      </header>
+
+      <section>
+        <h2>Usage</h2>
+        <p>Include <code>hotmenu.jquery.js</code> and <code>hotmenu.css</code> in your project...</p>
+        <code class="usage">
+&lt;script type="text/javascript" src="hotmenu.jquery.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="hotmenu.min.css"&gt;
+        </code>
+        <p>...add a toggle...</p>
+        <code class="usage">
+&lt;button class='hm-toggle'&gt;Click me&lt;/button&gt;
+        </code>
+        <p>...and then:</p>
+        <code class="usage">
+$(function() {
+  $('nav').hotMenu();
+});
+        </code>
+      </section>
+
+      <section>
+        <h2>Options</h2>
+        <p>
+          <code>toggleSelector</code><br>
+          The selector for element that should trigger the menu to open.
+          <span class="default">.hm-toggle</span>
+        </p>
+        <p>
+          <code>mediaQuery</code><br>
+          Media query string at which hotmenu should be active.
+          <span class="default">null</span>
+        </p>
+
+        <h3>Example with options</h3>
+        <code class="usage">
+$(’nav’).hotMenu({
+  toggleSelector: '.hm-toggle',
+  mediaQuery: '(max-width: 600px)'
+});
+        </code>
+        <p>hotmenu takes care of basic styling, but most of it's up to you. You're responsible for creating the toggle that opens the menu. The default class that hotmenu looks for is <code>hm-toggle</code>.</p>
+        <p>
+      </section>
+      <footer>
+        Created by <a href="http://github.com/ctruelson" target="_blank">@ctruelson</a>
+        <span class="copyright">&copy; 2016</span>
+      </footer>
+    </div>
+  </body>
+</html>

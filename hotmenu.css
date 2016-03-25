@@ -1,0 +1,41 @@
+.hm-links {
+  background-color: white;
+  font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+}
+.hm-links.hidden {
+  visibility: hidden;
+}
+.hm-links > a,
+.hm-links > ul li {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.hm-links > ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+}
+.hm-links > a:visited,
+.hm-links > a:hover,
+.hm-links.active {
+  color: black;
+  visibility: visible;
+}
+.hm-links > a:hover {
+  background-color: gray;
+}
