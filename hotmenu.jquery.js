@@ -71,8 +71,7 @@
   };
 
   Menu.prototype.open = function() {
-    // Calculate link heights
-    $('body').css('overflow', 'hidden');
+    $('body', 'html').css('position', 'fixed');
     this.setLinkHeights((window.innerHeight / this.linkEls.length) + 'px');
     this.toggleEl.addClass('active');
     this.element.removeClass('hidden')
@@ -85,7 +84,7 @@
 
   Menu.prototype.close = function() {
     var _this = this;
-    $('body').css('overflow', '');
+    $('body', 'html').css('position', '');
     this.toggleEl.removeClass('active');
     this.element.animate({
       opacity: 0.0,
