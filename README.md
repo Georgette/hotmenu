@@ -7,7 +7,8 @@ A responsive, full-screen jQuery menu.
 Include `hotmenu.jquery.js` and `hotmenu.css` in your project...
 
 ```
-<script type="text/javascript" src="hotmenu.jquery.min.js"></script> <link rel="stylesheet" href="hotmenu.min.css">`
+<script type="text/javascript" src="hotmenu.jquery.min.js"></script>
+<link rel="stylesheet" href="hotmenu.min.css">`
 ```
 
 ...add a toggle...
