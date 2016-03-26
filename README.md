@@ -30,7 +30,7 @@ Media query string at which hotmenu should be active. Default: null
 ### Example with options
 
 ```
-$(’nav’).hotMenu({ 
+$('nav').hotMenu({ 
   toggleSelector: '.hm-toggle', 
   mediaQuery: '(max-width: 600px)' 
 });
