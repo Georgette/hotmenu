@@ -126,4 +126,4 @@
   $.fn.hotMenu = function(options) {
     return new Menu(this, options);
   };
-});
+}));
