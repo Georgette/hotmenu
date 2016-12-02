@@ -1,4 +1,10 @@
-;(function($, document, window) {
+;(function (factory) {
+  if(typeof module === "object" && typeof module.exports === "object") {
+    factory(require("jquery"), window, document);
+  } else {
+    factory(jQuery, window, document);
+  }
+}(function($, window, document) {
   var defaults = {
     toggleSelector: '.hm-toggle',
     mediaQuery: null
@@ -120,4 +126,4 @@
   $.fn.hotMenu = function(options) {
     return new Menu(this, options);
   };
-})(jQuery, document, window);
+});

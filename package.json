@@ -11,6 +11,8 @@
     "css",
     "simple"
   ],
+  "main": "jquery.hotmenu.js",
+  "style": ["hotmenu.css"],
   "homepage": "http://ctruelson.github.io/hotmenu",
   "bugs": {
     "url": "https://github.com/ctruelson/hotmenu/issues",
@@ -30,5 +32,8 @@
     "gulp-clean-css": "^2.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
   }
 }
